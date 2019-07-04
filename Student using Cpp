@@ -33,6 +33,10 @@ int main()
 	s[n].getName();
 	s[n].getAge();
 	}
+	
+	
+	//the loop below is not getting executed
+	
 	for(i=0;i<n;i++){
 	cout<<"the name of student is : "<<s[n].name;
 	cout<<"the age of student is : "<<s[n].age;
