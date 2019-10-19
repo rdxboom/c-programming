@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{	int n,i,sum=0,min,max;
+	cout<<"enter number of element"<<endl;
+	cin>>n;
+	cout<<n<<endl;
+	int arr[n];
+//	array declaration
+	for(i=0;i<n;i++){
+		cin>>arr[i];
+
+	}
+	for(i=0;i<n;i++){
+		cout<<arr[i];
+	}
+//	sum of all terms
+	for(i=0;i<n;i++)
+	{
+		sum=sum+arr[i];
+	}
+	cout<<"Sum of all array terms is "<<sum<<endl;
+//	min term in array
+	min=arr[0];
+	for(i=0;i<n;i++){
+		if(min>arr[i]){
+			min=arr[i];
+		}
+	}
+	cout<<"minimum term is "<<min<<endl;
+
+
+
+//	max term in array
+	max=arr[0];
+	for(i=0;i<n;i++){
+		if(max<arr[i]){
+			max=arr[i];
+		}
+	}
+	cout<<"maximum term is "<<max<<endl;
+}
